@@ -2,14 +2,15 @@ import { Badge as BadgeIcon } from "lucide-react";
 import { SectionHeading } from "./Announcements";
 
 const DIVISIONS = [
-  { name: "Ο.Δ.Υ.Σ", description: "Ομαδα Διαχειρισης Υποθεσεων Ασφαλειας", color: "#1e3a8a" },
-  { name: "Ο.Δ.Α.Κ", description: "Ομαδα Διαχειρισης Ακραιων Καταστασεων", color: "#dc2626" },
-  { name: "Ο.Ε.Σ", description: "Ομαδα Ειδικων Στοιχειων", color: "#16a34a" },
-  { name: "Δ.Α.Π.Ο", description: "Διευθυνση Αντιμετωπισης Παραβατικης Οδηγησης", color: "#9333ea" },
-  { name: "Ε.Μ.Α.Κ", description: "Ειδικη Μοναδα Αντιμετωπισης Καταστροφων", color: "#ea580c" },
-  { name: "Τ.Ε.Ε", description: "Τμημα Ειδικων Επιχειρησεων", color: "#0891b2" },
-  { name: "Ο.Ο.Ε", description: "Ομαδα Οργανωσης Επιχειρησεων", color: "#ca8a04" },
-  { name: "Κεντρο", description: "Κεντρικη Διοικηση & Συντονισμος", color: "#475569" },
+  { name: "Ο.Τ.Α", description: "Ομαδα Ταχυτατης Ανταποκρισης (Α.Δ)", color: "#1e3a8a" },
+  { name: "Ο.Δ.ΥΣ", description: "Ομαδα Δυναμικης Υποστηριξης (ΔΙ.ΑΣ)", color: "#dc2626" },
+  { name: "Ο.Δ.Α.Κ", description: "Ομαδα Διωξης & Αμεσης Καταστολης (Ο.Π.Κ.Ε)", color: "#16a34a" },
+  { name: "Ο.Ε.M", description: "Ομαδα Επεμβασης Μοτοσικλετιστων (Ζ)", color: "#9333ea" },
+  { name: "Δ.Α.Π.Ο", description: "Διευθυνση Αντιμετωπισης Παρανομων Ουσιων (Διωξη Ναρκωτικων)", color: "#ea580c" },
+  { name: "Ε.Μ.Α.Κ", description: "Ειδικη Μοναδα Αμεσης Καταστολης (Ε.Κ.Α.Μ)", color: "#0891b2" },
+  { name: "Τ.Ε.Ε", description: "Τμημα Εγκληματολογικων Ερευνων (Εγκληματολογικο)", color: "#ca8a04" },
+  { name: "Ο.Ο.Ε", description: "Ομαδα Οδικων Ελεγχων (Τροχαια)", color: "#475569" },
+  { name: "Ο.Ε.Σ", description: "Ομαδα Εξουδετερωσης Στοχων (Δραση)", color: "#be123c" },
 ];
 
 export const Divisions = () => {
