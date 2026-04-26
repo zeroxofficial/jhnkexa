@@ -4,9 +4,9 @@ import { supabase } from "@/integrations/supabase/client";
 import { format } from "date-fns";
 
 const severityMap = {
-  info: { icon: Info, label: "INFO", className: "border-siren-blue/40 text-siren-blue" },
-  alert: { icon: AlertTriangle, label: "ALERT", className: "border-amber-500/50 text-amber-400" },
-  critical: { icon: AlertOctagon, label: "CRITICAL", className: "border-siren-red text-siren-red animate-strobe" },
+  info: { icon: Info, label: "ΠΛΗΡΟΦΟΡΙΑ", className: "border-siren-blue/40 text-siren-blue" },
+  alert: { icon: AlertTriangle, label: "ΕΙΔΟΠΟΙΗΣΗ", className: "border-amber-500/50 text-amber-400" },
+  critical: { icon: AlertOctagon, label: "ΚΡΙΣΙΜΟ", className: "border-siren-red text-siren-red animate-strobe" },
 } as const;
 
 export const Announcements = () => {
@@ -27,20 +27,20 @@ export const Announcements = () => {
     <section id="dispatch" className="border-b border-border py-20 sm:py-24">
       <div className="container">
         <SectionHeading
-          eyebrow="01 / Dispatch"
-          title="Dispatch Board"
-          description="Active bulletins from command. Updated as situations evolve."
+          eyebrow="01 / Αποστολή"
+          title="Πίνακας Αποστολής"
+          description="Ενεργά δελτία από τη διοίκηση. Ενημερώνεται καθώς εξελίσσονται οι καταστάσεις."
         />
 
         <div className="mt-12 grid gap-4 lg:grid-cols-2">
           {isLoading && (
             <div className="col-span-full font-mono text-sm text-muted-foreground">
-              ▸ Loading dispatch feed...
+              ▸ Φόρτωση ροής αποστολής...
             </div>
           )}
           {!isLoading && data?.length === 0 && (
             <div className="col-span-full border border-dashed border-border bg-card/40 p-8 text-center font-mono text-sm text-muted-foreground">
-              No active dispatches at this time.
+              Δεν υπάρχουν ενεργές αποστολές αυτή τη στιγμή.
             </div>
           )}
           {data?.map((a) => {

@@ -20,14 +20,14 @@ export const Divisions = () => {
     <section id="divisions" className="border-b border-border py-20 sm:py-24">
       <div className="container">
         <SectionHeading
-          eyebrow="03 / Chain of Command"
-          title="Ranks & Divisions"
-          description="Structured units. Clear chain of command. Assigned roles."
+          eyebrow="03 / Αλυσίδα Διοίκησης"
+          title="Βαθμοί & Τμήματα"
+          description="Δομημένες μονάδες. Σαφής αλυσίδα διοίκησης. Καθορισμένοι ρόλοι."
         />
 
         <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {isLoading && (
-            <div className="col-span-full font-mono text-sm text-muted-foreground">▸ Loading roster...</div>
+            <div className="col-span-full font-mono text-sm text-muted-foreground">▸ Φόρτωση μητρώου...</div>
           )}
           {data?.map((d, i) => {
             const count = (d.officers as unknown as { count: number }[])?.[0]?.count ?? 0;
@@ -58,7 +58,7 @@ export const Divisions = () => {
                     <p className="mt-1 text-xs text-muted-foreground">{d.description}</p>
                   )}
                   <div className="mt-3 font-mono text-[10px] uppercase tracking-widest">
-                    <span className="text-muted-foreground">Officers · </span>
+                    <span className="text-muted-foreground">Αξιωματικοί · </span>
                     <span className="text-foreground">{count}</span>
                   </div>
                 </div>

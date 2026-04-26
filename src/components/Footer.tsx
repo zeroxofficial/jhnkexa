@@ -14,13 +14,13 @@ export const Footer = () => {
             <div className="grid-bg absolute inset-0 opacity-40" aria-hidden />
             <div className="relative">
               <div className="font-mono text-[11px] uppercase tracking-[0.3em] text-siren-red">
-                // Code 4 · Ready to deploy
+                // Κωδικός 4 · Έτοιμοι για ανάπτυξη
               </div>
               <h2 className="mt-3 font-display text-4xl sm:text-5xl">
-                Join the squad on <span className="text-siren-blue">Discord</span>
+                Γίνε μέλος της ομάδας στο <span className="text-siren-blue">Discord</span>
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-                Hit a button. Get the invite. Suit up.
+                Πάτα ένα κουμπί. Πάρε την πρόσκληση. Ετοιμάσου.
               </p>
               <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Button
@@ -31,7 +31,7 @@ export const Footer = () => {
                 >
                   <a href={DISCORD_INVITE} target="_blank" rel="noopener noreferrer">
                     <Megaphone className="h-5 w-5" />
-                    Contact Us
+                    Επικοινωνία
                     <ExternalLink className="h-4 w-4 opacity-60" />
                   </a>
                 </Button>
@@ -60,7 +60,7 @@ export const Footer = () => {
           {BRAND} · © {new Date().getFullYear()}
         </div>
         <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-          Status: <span className="text-siren-red animate-blink">●</span> ACTIVE
+          Κατάσταση: <span className="text-siren-red animate-blink">●</span> ΕΝΕΡΓΟ
         </div>
       </div>
     </footer>

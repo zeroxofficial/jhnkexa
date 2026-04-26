@@ -6,27 +6,27 @@ export const About = () => {
     <section id="about" className="relative border-b border-border py-20 sm:py-24">
       <div className="container">
         <SectionHeading
-          eyebrow="02 / Mission Brief"
-          title="About the Department"
-          description="Who we are, what we stand for, and how we operate."
+          eyebrow="02 / Εντολή Αποστολής"
+          title="Σχετικά με το Τμήμα"
+          description="Ποιοι είμαστε, τι υποστηρίζουμε και πώς λειτουργούμε."
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {[
             {
               icon: Shield,
-              title: "Serve",
-              body: "We protect our community with integrity, vigilance, and accountability — every shift, every call.",
+              title: "Υπηρέτουμε",
+              body: "Προστατεύουμε την κοινότητά μας με ακεραιότητα, επαγρύπνηση και υπευθυνότητα — κάθε βάρδια, κάθε κλήση.",
             },
             {
               icon: Crosshair,
-              title: "Coordinate",
-              body: "Tactical ops, structured ranks, real-time dispatch. We move as one squad with one objective.",
+              title: "Συντονιζόμαστε",
+              body: "Τακτικές επιχειρήσεις, δομημένες βαθμίδες, αποστολή σε πραγματικό χρόνο. Κινούμαστε ως μία ομάδα με έναν στόχο.",
             },
             {
               icon: Eye,
-              title: "Watch",
-              body: "24/7 presence on Discord. From cadets to the chief — eyes are always on the channel.",
+              title: "Παρακολουθούμε",
+              body: "Παρουσία 24/7 στο Discord. Από δόκιμους έως τον αρχηγό — τα μάτια είναι πάντα στο κανάλι.",
             },
           ].map(({ icon: Icon, title, body }) => (
             <div

@@ -1,11 +1,11 @@
 import { Radio } from "lucide-react";
 
 const TICKER = [
-  "DISPATCH ONLINE",
-  "ALL UNITS — REPORT IN",
-  "RECRUITMENT ACTIVE",
-  "JOIN DISCORD FOR LIVE OPS",
-  "STATUS: CODE 4",
+  "ΑΠΟΣΤΟΛΗ ΕΝΕΡΓΗ",
+  "ΟΛΕΣ ΟΙ ΜΟΝΑΔΕΣ — ΑΝΑΦΕΡΘΕΙΤΕ",
+  "ΣΤΡΑΤΟΛΟΓΗΣΗ ΕΝΕΡΓΗ",
+  "ΜΠΕΙΤΕ ΣΤΟ DISCORD ΓΙΑ ΖΩΝΤΑΝΕΣ ΕΠΙΧΕΙΡΗΣΕΙΣ",
+  "ΚΑΤΑΣΤΑΣΗ: ΚΩΔΙΚΟΣ 4",
 ];
 
 export const SirenBar = () => {
@@ -17,11 +17,11 @@ export const SirenBar = () => {
           <span className="relative inline-flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-strobe rounded-full bg-siren-red" />
           </span>
-          LIVE
+          ΖΩΝΤΑΝΑ
         </span>
         <span className="flex items-center gap-1.5 text-siren-blue">
           <Radio className="h-3 w-3" />
-          DISPATCH
+          ΑΠΟΣΤΟΛΗ
         </span>
         <div className="relative flex-1 overflow-hidden">
           <div className="flex w-max animate-ticker gap-10 whitespace-nowrap">
