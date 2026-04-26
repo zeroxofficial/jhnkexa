@@ -2,15 +2,15 @@ import { Badge as BadgeIcon } from "lucide-react";
 import { SectionHeading } from "./Announcements";
 
 const DIVISIONS = [
-  { name: "Ο.Τ.Α", description: "Ομαδα Ταχυτατης Ανταποκρισης (Α.Δ)", color: "#1e3a8a" },
-  { name: "Ο.Δ.ΥΣ", description: "Ομαδα Δυναμικης Υποστηριξης (ΔΙ.ΑΣ)", color: "#dc2626" },
-  { name: "Ο.Δ.Α.Κ", description: "Ομαδα Διωξης & Αμεσης Καταστολης (Ο.Π.Κ.Ε)", color: "#16a34a" },
-  { name: "Ο.Ε.M", description: "Ομαδα Επεμβασης Μοτοσικλετιστων (Ζ)", color: "#9333ea" },
-  { name: "Δ.Α.Π.Ο", description: "Διευθυνση Αντιμετωπισης Παρανομων Ουσιων (Διωξη Ναρκωτικων)", color: "#ea580c" },
-  { name: "Ε.Μ.Α.Κ", description: "Ειδικη Μοναδα Αμεσης Καταστολης (Ε.Κ.Α.Μ)", color: "#0891b2" },
-  { name: "Τ.Ε.Ε", description: "Τμημα Εγκληματολογικων Ερευνων (Εγκληματολογικο)", color: "#ca8a04" },
-  { name: "Ο.Ο.Ε", description: "Ομαδα Οδικων Ελεγχων (Τροχαια)", color: "#475569" },
-  { name: "Ο.Ε.Σ", description: "Ομαδα Εξουδετερωσης Στοχων (Δραση)", color: "#be123c" },
+  { name: "Ο.Τ.Α", description: "Ομαδα Ταχυτατης Ανταποκρισης (Α.Δ)", color: "#dc2626" },
+  { name: "Ο.Δ.ΥΣ", description: "Ομαδα Δυναμικης Υποστηριξης (ΔΙ.ΑΣ)", color: "#1e3a8a" },
+  { name: "Ο.Δ.Α.Κ", description: "Ομαδα Διωξης & Αμεσης Καταστολης (Ο.Π.Κ.Ε)", color: "#dc2626" },
+  { name: "Ο.Ε.M", description: "Ομαδα Επεμβασης Μοτοσικλετιστων (Ζ)", color: "#1e3a8a" },
+  { name: "Δ.Α.Π.Ο", description: "Διευθυνση Αντιμετωπισης Παρανομων Ουσιων (Διωξη Ναρκωτικων)", color: "#dc2626" },
+  { name: "Ε.Μ.Α.Κ", description: "Ειδικη Μοναδα Αμεσης Καταστολης (Ε.Κ.Α.Μ)", color: "#1e3a8a" },
+  { name: "Τ.Ε.Ε", description: "Τμημα Εγκληματολογικων Ερευνων (Εγκληματολογικο)", color: "#dc2626" },
+  { name: "Ο.Ο.Ε", description: "Ομαδα Οδικων Ελεγχων (Τροχαια)", color: "#1e3a8a" },
+  { name: "Ο.Ε.Σ", description: "Ομαδα Εξουδετερωσης Στοχων (Δραση)", color: "#dc2626" },
 ];
 
 export const Divisions = () => {
