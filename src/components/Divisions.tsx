@@ -1,16 +1,15 @@
-import { Badge as BadgeIcon } from "lucide-react";
 import { SectionHeading } from "./Announcements";
 
 const DIVISIONS = [
-  { name: "Ο.Τ.Α", description: "Ομαδα Ταχυτατης Ανταποκρισης (Α.Δ)", color: "#dc2626" },
-  { name: "Ο.Δ.ΥΣ", description: "Ομαδα Δυναμικης Υποστηριξης (ΔΙ.ΑΣ)", color: "#1e3a8a" },
-  { name: "Ο.Δ.Α.Κ", description: "Ομαδα Διωξης & Αμεσης Καταστολης (Ο.Π.Κ.Ε)", color: "#dc2626" },
-  { name: "Ο.Ε.M", description: "Ομαδα Επεμβασης Μοτοσικλετιστων (Ζ)", color: "#1e3a8a" },
-  { name: "Δ.Α.Π.Ο", description: "Διευθυνση Αντιμετωπισης Παρανομων Ουσιων (Διωξη Ναρκωτικων)", color: "#dc2626" },
-  { name: "Ε.Μ.Α.Κ", description: "Ειδικη Μοναδα Αμεσης Καταστολης (Ε.Κ.Α.Μ)", color: "#1e3a8a" },
-  { name: "Τ.Ε.Ε", description: "Τμημα Εγκληματολογικων Ερευνων (Εγκληματολογικο)", color: "#dc2626" },
-  { name: "Ο.Ο.Ε", description: "Ομαδα Οδικων Ελεγχων (Τροχαια)", color: "#1e3a8a" },
-  { name: "Ο.Ε.Σ", description: "Ομαδα Εξουδετερωσης Στοχων (Δραση)", color: "#dc2626" },
+  { name: "Ο.Τ.Α", description: "Ομαδα Ταχυτατης Ανταποκρισης (Α.Δ)", color: "#dc2626", image: "/ota.png" },
+  { name: "Ο.Δ.ΥΣ", description: "Ομαδα Δυναμικης Υποστηριξης (ΔΙ.ΑΣ)", color: "#1e3a8a", image: "/odys.png" },
+  { name: "Ο.Δ.Α.Κ", description: "Ομαδα Διωξης & Αμεσης Καταστολης (Ο.Π.Κ.Ε)", color: "#dc2626", image: "/odak.png" },
+  { name: "Ο.Ε.M", description: "Ομαδα Επεμβασης Μοτοσικλετιστων (Ζ)", color: "#1e3a8a", image: "/oem.png" },
+  { name: "Δ.Α.Π.Ο", description: "Διευθυνση Αντιμετωπισης Παρανομων Ουσιων (Διωξη Ναρκωτικων)", color: "#dc2626", image: "/dapo.png" },
+  { name: "Ε.Μ.Α.Κ", description: "Ειδικη Μοναδα Αμεσης Καταστολης (Ε.Κ.Α.Μ)", color: "#1e3a8a", image: "/emak.png" },
+  { name: "Τ.Ε.Ε", description: "Τμημα Εγκληματολογικων Ερευνων (Εγκληματολογικο)", color: "#dc2626", image: "/tee.png" },
+  { name: "Ο.Ο.Ε", description: "Ομαδα Οδικων Ελεγχων (Τροχαια)", color: "#1e3a8a", image: "/ooe.png" },
+  { name: "Ο.Ε.Σ", description: "Ομαδα Εξουδετερωσης Στοχων (Δραση)", color: "#dc2626", image: "/oes.png" },
 ];
 
 export const Divisions = () => {
@@ -31,14 +30,18 @@ export const Divisions = () => {
               style={{ background: "var(--gradient-card)" }}
             >
               <div
-                className="flex h-12 w-12 shrink-0 items-center justify-center border"
+                className="flex h-14 w-14 shrink-0 items-center justify-center border overflow-hidden"
                 style={{
                   borderColor: d.color,
                   background: `${d.color}1a`,
                   boxShadow: `0 0 12px ${d.color}55`,
                 }}
               >
-                <BadgeIcon className="h-6 w-6" style={{ color: d.color }} />
+                <img
+                  src={d.image}
+                  alt={d.name}
+                  className="h-full w-full object-contain p-1"
+                />
               </div>
               <div className="min-w-0 flex-1">
                 <div className="flex items-center justify-between gap-2">
